@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  
+  <div id="clock"></div>
+  <div class="contain">
+    
+    <div class="text">
+        
+  
+      <h1
+        style="background: -webkit-linear-gradient(rgb(188,12,241), rgb(212,4,4));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;"
+      
+      > Instagram  <i class="ri-instagram-fill"></i></h1>   
+      <!-- <i class="ri-instagram-fill"></i>    -->
+      <input class="inp1" type="text" placeholder="Enter Username " style="color: black;"> 
+      <input class="inp2"  type="password" placeholder="Enter password" style="color: black;"> 
+      <i class="ri-eye-off-fill"></i>
+      <br>
+      <a href="https://www.instagram.com/" id="linkk" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; color: rgb(231, 255, 92);" >Forgot password</a>
+     <button id="btn" onclick="popup()">Login   </button> 
+      <p onclick="popup2()">Not a member ? <span id="ram" onclick="popup1()">Sign up</span></p>
+        
+    </div>
+      
+   </div>
+
+  
+  
+
+
+   <script>
+    function popup() {
+      alert('Successfully registered')
+    }
+    function popup1()
+    {
+      alert('find your id')
+    }
+
+    function popup2() {
+      alert('please sign in ')
+      
+    }
+    const clock=document.getElementById('clock')
+
+setInterval( function ()  {
+    let date = new Date();
+    clock.innerHTML=date.toLocaleTimeString();
+    
+},1000);
+
+   </script>
+
+<!-- background: linear-gradient(45deg, red, blue); -->
+
+
+</body>
+</html>
+
+
+
